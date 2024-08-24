@@ -514,6 +514,7 @@ background: var(--primary-color);
  }
 footer{
   background:var(--bg-background);
+  width: 100vw;
 }
 .footer__container{
   display: flex;
@@ -699,6 +700,10 @@ place-content: center;
   align-items: center;
   gap: 2rem;
 }
+footer{
+  width: 100vw;
+  margin-bottom: -5rem;
+  }
 @keyframes moving {
   from{
     right: -5rem;
@@ -706,6 +711,19 @@ place-content: center;
   to{
   opacity: 1;
   right: 111%;
+
   }
  }
+}
+@media screen and (max-width:350px){
+.container{
+  width: 98vw;
+  margin: auto;
+}
+footer{
+width: 100vw;
+}
+.footer__container p{
+  font-size: .6rem;
+}
 }
